@@ -15,3 +15,6 @@ byte6: Αρχικά έκανα man unzip για να δω την λειτουρ�
 Archive:  byte6.zip
 replace byte6.txt? [y]es, [n]o, [A]ll, [N]one, [r]ename: y
  extracting: byte6.txt . Επέλεξα το yes και έτσι έκανα το αρχείο unzip. Άρα τώρα που το αρχείο είναι σε .txt μορφής, το έκανα cat για να δω τα περιεχόμενα του. Έτσι μου έβγαλε το string που αναζητούμε, το unzipping_is_a_piece_of_cake
+
+
+byte7: Άρχικά έψαξα την λειτουργία της εντολής tar με την εντολή man. Δοκιμάζοντας μια εντολή του tar, το tar -x -f  byte7.tar.gz, πρόσεξα ότι πάλι δεν είχα permission να επεξεργαστώ το αρχείο. Άρα ακολούθησα παρόμια διαδρομή με το byte6. Δηλαδή έκανα copy το αρχείο στο tmp directory με την εντολή cp byte7.tar.gz, για να έχω permission να το επεξεργαστώ. Αφότου μπήκα στο tmp με cd /tmp, δοκίμαζα διάφορες εκδοχές τησ εντολής tar όταν έτρεξα την εντολή tar -t -f byte7.tar.gz που χρησιμοποιήτε για να κάνει list τα περιεχόμενα του byte7.tar.gz και έτσι είδα ότι υπάρχει το αρχείο byte7.txt μέσα στο byte7.tar.gz. Άρα έκανα cat το byte7.txt και βρήκα το string που αναζητούμε.
